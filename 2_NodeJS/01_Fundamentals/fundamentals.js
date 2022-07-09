@@ -56,22 +56,55 @@ const { resolve } = require('path');
 
 
 // Solution to Disadvantages of Asynchronous flow --------------------------------------
-console.log('Start...');
+// console.log('Start...');
 
-let x = 20;
-let y = 10;
+// let x = 20;
+// let y = 10;
 
-let updateWaitData = new Promise((resolved,reject)=>{
-  setTimeout(()=>{
-    y = 30;
-    console.log('Process...\n');
-    if(y==30) resolved('Updated');
-    else reject('Error');
-  },2000);
-});
+// let updateWaitData = new Promise((resolved,reject)=>{
+//   setTimeout(()=>{
+//     y = 30;
+//     console.log('Process...\n');
+//     if(y==30) resolved('Updated');
+//     else reject('Error');
+//   },2000);
+// });
 
-updateWaitData.then(()=>{
-  console.log(x+y);
-});
+// updateWaitData.then(()=>{
+//   console.log(x+y);
+// });
 
-console.log('Stop...');
+// console.log('Stop...');
+
+
+
+
+// How NodeJS works --------------------------------------------------------------------
+
+/*
+Event Loop:
+1. Call Stack
+2. Node API
+3. Callback Queue
+*/
+
+// Without Node API and Callback Queue
+let p = 1;
+let q = 2;
+console.log("Start...")
+console.log("Process...")
+console.log("Stop...")
+
+
+// With Node API and Callback Queue (Due to C, C++)
+console.log("Start...")
+
+setTimeout(()=>{
+  console.log("Wait for 2 Seconds...")
+},2000);
+
+setTimeout(()=>{
+  console.log("Wait for 0 Second...")
+},0);
+
+console.log("Stop...")

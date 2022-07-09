@@ -1,0 +1,14 @@
+{
+  "name": "02_basic-server_functions",
+  "version": "1.0.0",
+  "description": "Basic Server Function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

@@ -1,0 +1,7 @@
+Go to : https://the-winter.github.io/codingjs/
+
+1. Solve all the problems topic by topic
+2. Try to pass all the testcases to the function
+3. If you don't get the solution, kindly refers the solutions in this folder.
+
+Solutions : https://github.com/siddhapuraharsh/NodeJS-ExpressJS_Mongoose-MySQL_Full-Course/tree/main/1_Javascript/Assignments

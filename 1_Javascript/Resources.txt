@@ -1,0 +1,4 @@
+Resources
+
+1. Theory = https://developer.mozilla.org/en-US/docs/Web/JavaScript
+2. Code Snippets + Theory = https://www.programiz.com/javascript/ES6

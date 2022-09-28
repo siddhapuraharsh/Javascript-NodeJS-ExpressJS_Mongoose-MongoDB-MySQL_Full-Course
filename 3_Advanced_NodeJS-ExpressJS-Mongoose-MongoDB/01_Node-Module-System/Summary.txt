@@ -8,7 +8,8 @@ So, in this section, you learned that:
 
 - Unlike browser applications, variables we define are not added to the “global” object. 
 
-- Every file in a Node application is a module. Node automatically wraps the code in each file with an IIFE (Immediately-invoked Function Expression) to create scope. So, variables and functions defined in one file are only scoped to that file and not visible to other files unless explicitly exported. 
+- Every file in a Node application is a module. Node automatically wraps the code in each file with an IIFE (Immediately-invoked Function Expression) to create scope. 
+So, variables and functions defined in one file are only scoped to that file and not visible to other files unless explicitly exported. 
 
 - To export a variable or function from a module, you need to add them to module.exports: module.exports.sayHello = sayHello; 
 
